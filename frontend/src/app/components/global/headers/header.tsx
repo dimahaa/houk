@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import { TestButton , ThemeToggleButton } from "./header-buttons";
+import { TestButton, ThemeToggleButton } from "./header-buttons";
 
 // You can add props to this interface in the future
 interface HeaderProps {}
