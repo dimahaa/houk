@@ -1,0 +1,43 @@
+@use "@/app/styles/main" as*;
+
+.acoordion-item-1-div1 {
+   display:flex;
+   flex-direction: column;
+}
+
+
+.acoordion-item-1-div2 {
+   background-color: var(--color-box2-background);
+   border-radius: 10px;
+   display: flex;
+   justify-items: center;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 16px;
+   border: 1px solid var(--color-box2-border);
+
+   h4{
+      margin-top: 4px;
+   }
+
+   Button {
+      font-size: 1.2rem;
+      border-radius: 50%;
+   }
+}
+
+
+.acoordion-item-1-div3 {
+   border: 1px solid var(--color-box2-border);
+   
+   background-color: var(--color-box2-background);
+   margin: 8px 55px 0px 0px;
+   border-radius: 10px;
+   padding: 20px;
+   display: flex;
+
+ p {
+   direction: rtl;
+   text-align: justify;
+ }
+}

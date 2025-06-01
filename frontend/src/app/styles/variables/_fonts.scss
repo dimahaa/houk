@@ -1,0 +1,56 @@
+//............................................define fonts variables..................................................
+@font-face {
+  font-family: "IranSans";
+  src: url("/fonts/IRANSansXVF.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* تعریف متغیرهای فونت */
+$font-family-primary: "IranSans", sans-serif;
+
+$font-sizes: (
+  h1: 2.5rem,
+  h2: 1.75rem,
+  h3: 1.25rem,
+  h4: 1rem,
+  h5: 0.8rem,
+  h6: 0.65rem,
+  p: 0.85rem,
+  button: 0.8rem,
+  small-button: 0.875rem,
+  input: 0.8rem,
+);
+
+$font-weights: (
+  h1: 900,
+  h2: 800,
+  h3: 700,
+  h4: 600,
+  h5: 500,
+  h6: 300,
+  p: 400,
+  button: 600,
+  small-button: 500,
+  input: 300,
+);
+
+$font-lineheights: (
+  h1: 4rem,
+  h2: 3rem,
+  h3: 2.5rem,
+  h4: 2.2rem,
+  h5: 1.5rem,
+  h6: 1.25rem,
+  p: 2.2rem,
+  button: 1.5rem,
+  small-button: 1.5rem,
+  input: 1.2rem,
+);
+
+@mixin fonts($level) {
+  font-family: $font-family-primary;
+  font-size: map-get($font-sizes, $level);
+  font-weight: map-get($font-weights, $level);
+  line-height: map-get($font-lineheights, $level);
+}
