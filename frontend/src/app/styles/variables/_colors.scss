@@ -1,0 +1,180 @@
+//............................................define sass colors variables.............................................
+//SELECT setval('users_id_seq', (SELECT MAX(id) FROM users));
+// متغیرهای پایه Sass
+$primary-color: hsl(86, 100%, 50%);
+
+// ساخت رنگ‌های مشتق‌شده با توابع Sass
+$primary-s1: lighten($primary-color, 48%);
+$primary-s1-dark: darken($primary-color, 48%);
+
+$primary-s2: lighten($primary-color, 42%);
+$primary-s2-dark: darken($primary-color, 42%);
+
+$primary-s3: lighten($primary-color, 38%);
+$primary-s3-dark: darken($primary-color, 38%);
+
+$primary-s4: lighten($primary-color, 30%);
+$primary-s4-dark: darken($primary-color, 30%);
+
+$primary-s5: lighten($primary-color, 20%);
+$primary-s5-dark: darken($primary-color, 20%);
+
+$primary-s6: lighten($primary-color, 12%);
+$primary-s6-dark: darken($primary-color, 15%);
+
+$primary-b1: darken($primary-color, 8%);
+$primary-b1-dark: lighten($primary-color, 12%);
+
+$primary-b2: darken($primary-color, 12%);
+$primary-b2-dark: lighten($primary-color, 20%);
+
+$primary-b3: darken($primary-color, 20%);
+$primary-b3-dark: lighten($primary-color, 30%);
+
+$primary-b4: darken($primary-color, 26%);
+$primary-b4-dark: lighten($primary-color, 36%);
+
+$primary-b5: darken($primary-color, 32%);
+$primary-b5-dark: lighten($primary-color, 43%);
+
+$primary-b6: darken($primary-color, 38%);
+$primary-b6-dark: lighten($primary-color, 43%);
+
+$primary-g1: hsl(0, 0%, 100%); // رنگ اصلی
+$primary-g1-dark: hsl(0, 0%, 0%); // رنگ اصلی در حالت تاریک
+
+$primary-g2: darken($primary-g1, 4%);
+$primary-g2-dark: lighten($primary-g1-dark, 20%);
+
+$primary-g3: darken($primary-g1, 8%);
+$primary-g3-dark: lighten($primary-g1-dark, 25%);
+
+$primary-g4: darken($primary-g1, 14%);
+$primary-g4-dark: lighten($primary-g1-dark, 35%);
+
+$primary-g5: darken($primary-g1, 20%);
+$primary-g5-dark: lighten($primary-g1-dark, 40%);
+
+$primary-g6: darken($primary-g1, 28%);
+$primary-g6-dark: lighten($primary-g1-dark, 50%);
+
+$primary-g7: darken($primary-g1, 38%);
+$primary-g7-dark: lighten($primary-g1-dark, 60%);
+
+$primary-g8: darken($primary-g1, 50%);
+$primary-g8-dark: lighten($primary-g1-dark, 80%);
+
+$primary-g9: darken($primary-g1, 58%);
+$primary-g9-dark: lighten($primary-g1-dark, 96%);
+
+$primary-g10: darken($primary-g1, 50%);
+$primary-g10-dark: lighten($primary-g1-dark, 50%);
+
+$background-color: #edeff3;
+$background-color-dark: hsl(0, 0%, 9%); // رنگ پس‌زمینه در حالت تاریک
+
+$box-background-color: #ffffff; // رنگ پس‌زمینه جعبه‌ها
+$box-background-color-dark: hsl(
+  0,
+  0%,
+  12%
+); // رنگ پس‌زمینه جعبه‌ها در حالت تاریک
+
+$box-border-color: #ffffff; // رنگ حاشیه جعبه‌ها
+$box-border-color-dark: #333333; // رنگ حاشیه جعبه‌ها در حالت تاریک
+
+$box2-background-color: rgb(243 244 246); // رنگ پس‌زمینه جعبه‌ها
+$box2-background-color-dark: hsl(
+  0,
+  0%,
+  15%
+); // رنگ پس‌زمینه جعبه‌ها در حالت تاریک
+$box2-border-color: rgb(243 244 246); // رنگ حاشیه جعبه‌ها
+$box2-border-color-dark: #3f3e3a; // رنگ حاشیه جعبه‌ها در حالت تاریک
+
+$title-color: $primary-g9; // رنگ عنوان‌ها
+$title-color-dark: $primary-g9-dark; // رنگ متن‌ها در حالت تاریکعنوان‌ها در حالت تاریک
+
+$text-color: $primary-g9; // رنگ متن‌ها
+$text-color-dark: $primary-g9-dark; // رنگ متن‌ها در حالت تاریک
+
+//.............................................define css colors variables..............................................
+
+// :root برای حالت Light
+:root {
+  --color-primary: #{$primary-b1};
+  --color-primary-s1: #{$primary-s1};
+  --color-primary-s2: #{$primary-s2};
+  --color-primary-s3: #{$primary-s3};
+  --color-primary-s4: #{$primary-s4};
+  --color-primary-s5: #{$primary-s5};
+  --color-primary-s6: #{$primary-s6};
+
+  --color-primary-b1: #{$primary-b1};
+  --color-primary-b2: #{$primary-b2};
+  --color-primary-b3: #{$primary-b3};
+  --color-primary-b4: #{$primary-b4};
+  --color-primary-b5: #{$primary-b5};
+  --color-primary-b6: #{$primary-b6};
+
+  --color-primary-g1: #{$primary-g1};
+  --color-primary-g2: #{$primary-g2};
+  --color-primary-g3: #{$primary-g3};
+  --color-primary-g4: #{$primary-g4};
+  --color-primary-g5: #{$primary-g5};
+  --color-primary-g6: #{$primary-g6};
+  --color-primary-g7: #{$primary-g7};
+  --color-primary-g8: #{$primary-g8};
+  --color-primary-g9: #{$primary-g9};
+  --color-primary-g10: #{$primary-g10};
+
+  --color-background: #{$background-color};
+  --color-box-background: #{$box-background-color};
+  --color-box-border: #{$box-border-color};
+  --color-box2-background: #{$box2-background-color};
+  --color-box2-border: #{$box2-border-color};
+
+  --color-title: #{$title-color};
+  --color-text: #{$text-color};
+  --color-button-1: #ffffff;
+}
+
+// برای حالت Dark
+[data-theme="dark"] {
+  --color-primary: #{$primary-color};
+  --color-primary-s1: #{$primary-s1-dark};
+  --color-primary-s2: #{$primary-s2-dark};
+  --color-primary-s3: #{$primary-s3-dark};
+  --color-primary-s4: #{$primary-s4-dark};
+  --color-primary-s5: #{$primary-s5-dark};
+  --color-primary-s6: #{$primary-s6-dark};
+
+  --color-primary-b1: #{$primary-b1-dark};
+  --color-primary-b2: #{$primary-b2-dark};
+  --color-primary-b3: #{$primary-b3-dark};
+  --color-primary-b4: #{$primary-b4-dark};
+  --color-primary-b5: #{$primary-b5-dark};
+  --color-primary-b6: #{$primary-b6-dark};
+
+  --color-primary-g1: #{$primary-g1-dark};
+  --color-primary-g2: #{$primary-g2-dark};
+  --color-primary-g3: #{$primary-g3-dark};
+  --color-primary-g4: #{$primary-g4-dark};
+  --color-primary-g5: #{$primary-g5-dark};
+  --color-primary-g6: #{$primary-g6-dark};
+  --color-primary-g7: #{$primary-g7-dark};
+  --color-primary-g8: #{$primary-g8-dark};
+  --color-primary-g9: #{$primary-g9-dark};
+  --color-primary-g10: #{$primary-g10-dark};
+
+  --color-background: #{$background-color-dark};
+  --color-box-background: #{$box-background-color-dark};
+  --color-box-border: #{$box-border-color-dark};
+  --color-box2-background: #{$box2-background-color-dark};
+  --color-box2-border: #{$box2-border-color-dark};
+  --color-title: #{$title-color-dark};
+  --color-text: #{$text-color-dark};
+  --color-button-1: #434343;
+}
+
+$border-radius-elements: 25px;

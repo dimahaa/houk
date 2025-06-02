@@ -1,0 +1,63 @@
+@use "@/app/styles/main" as*;
+
+.header-div1 {
+    display: flex;
+    width: 100%;
+    padding: 22px 30px;
+    gap: 55px;
+    margin: 0 0 16px 0;
+    background-color: var(--color-box-background);
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid var(--color-box-border);
+}
+
+.header-div2-right {
+    
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    
+
+}
+
+.header-div2-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: right;
+    justify-items: right;
+    align-items: center;
+    
+    ul{
+        margin-top: 2px;
+        font-weight: 500;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-items: right;
+        justify-content: end;
+        gap: 35px;
+        
+    }
+
+}
+
+.header-div2-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    flex-basis: 300px;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.img-logo{
+    width: 150px;
+    height: 45px;
+    color: red;
+}

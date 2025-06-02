@@ -1,0 +1,31 @@
+@use '../variables.scss' as*;
+
+
+.page-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.div1 {
+
+  @include from(laptop) {
+    width: 88%; 
+  }
+  @include from(tablet) {
+    width: 90%; 
+  }
+  @include from(mobile) {
+    width: 96%; 
+  }
+
+  display: flex;
+  width: 84%; 
+  background-color: var(--color-box-background);
+  border-radius: 16px;
+  border: 1px solid var(--color-box-border);
+}
