@@ -1,0 +1,33 @@
+@use '../variables.scss' as*;
+
+.input-defult {
+    @include fonts(input);
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid var(--color-primary-g4);
+    color: var(--color-primary-b3);
+    background-color: var(--color-box-background);
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--color-primary-b2);
+      @include fonts(input);
+      color: var(--color-primary-b4);
+    }
+
+    &:disabled {
+      background-color: var(--color-primary-g2);
+      color: var(--color-primary-g3);
+      cursor: not-allowed;
+      &::placeholder {
+        color: var(--color-primary-g4);
+      }
+    }
+
+    &::placeholder {
+      color: var(--color-primary-g5);
+      font-size: 12px;
+    }
+    
+    
+}

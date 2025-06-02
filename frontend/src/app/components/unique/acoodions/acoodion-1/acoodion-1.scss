@@ -1,0 +1,8 @@
+@use "@/app/styles/main" as*;
+
+.acoordion-1-div1 {
+   @extend .div1;
+   flex-direction: column;
+   gap: 15px;
+   padding: 30px; 
+}

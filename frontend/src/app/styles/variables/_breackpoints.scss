@@ -1,0 +1,20 @@
+//............................................define breakpoints variables..................................................
+$breakpoints: (
+  mobile: 500px,
+  tablet: 800px,
+  laptop: 1200px,
+  desktop: 50000px,
+) !default;
+
+// Breakpoint mixin
+@mixin from($breakpoint-name) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint-name);
+
+  @if $breakpoint-value != null {
+    @media (max-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @error "Unknown breakpoint `#{$breakpoint-name}`.";
+  }
+}
